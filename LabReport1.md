@@ -35,3 +35,8 @@ Now, try to use what you have learned in order to make an local edit to the wher
 This is a hint:
 ![image](https://user-images.githubusercontent.com/77379218/149596019-12a62d00-19d8-431e-9e09-3cc8215f3ec9.png)
 Adding quotations at the end of a command to run it in the remote server.
+Now, in order to make it run in the most efficient way, first, enter this in your terminal: ssh cs15lwi22aov@ieng6.ucsd.edu "ls"
+Enter your password and run it on your remote server. Now, try running multiple commands in a single line in order to make a local edit to WhereAmI.java, and
+ then copying it to the remote server and running it. Doing this allows you to only enter your password a single time and not every time you wished to make an edit, and 
+ by creating multiple commands on a single line allows you to making a local edit to your file, copy it to the remote server and run it at the same time. The commands are: 
+ scp WhereAmI.java; ssh cse15lwizz@ieng.ucsd.edu;(zz are the letters in your course-specific account) javac WhereAmI.java; java WhereAmI. Make sure to put these commands all in a single line and to use semi colons to space the commands out.
